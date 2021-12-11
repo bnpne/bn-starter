@@ -1,13 +1,13 @@
 import React, { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Preload, ScrollControls } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { Preload, ScrollControls, Scroll, useScroll } from '@react-three/drei'
 
 export default function CanvasContainer({ children }) {
   return (
     <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
       <Suspense fallback={null}>
         <ScrollControls damping={4} pages={3}>
-          {children}
+          <Scroll>{children}</Scroll>
         </ScrollControls>
         <Preload />
       </Suspense>
