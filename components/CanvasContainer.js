@@ -7,7 +7,7 @@ export default function CanvasContainer({ children }) {
     <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
       <Suspense fallback={null}>
         <ScrollControls damping={4} pages={3}>
-          <Scroll>{children}</Scroll>
+          {children}
         </ScrollControls>
         <Preload />
       </Suspense>
