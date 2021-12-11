@@ -16,6 +16,9 @@ module.exports = {
       lineHeight: {
         displayLargeHeight: '180.5px',
       },
+      spacing: {
+        page: '100vh',
+      },
     },
   },
   plugins: [],
