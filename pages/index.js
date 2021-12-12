@@ -8,7 +8,9 @@ export default function Index() {
     <div>
       <Layout>
         <CanvasContainer>
-          <Scroll html>Hello</Scroll>
+          <Scroll className="w-full" html>
+            Hello
+          </Scroll>
         </CanvasContainer>
       </Layout>
     </div>

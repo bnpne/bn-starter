@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <MetaTags title="" desc="" />
-      <main>{children}</main>
-    </div>
+      <main className="w-full">{children}</main>
+    </>
   )
 }

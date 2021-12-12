@@ -8,7 +8,7 @@ export default function CanvasContainer({
   pages = '1',
 }) {
   return (
-    <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
+    <Canvas className="w-full" gl={{ antialias: false }} dpr={[1, 1.5]}>
       <Suspense fallback={null}>
         <ScrollControls damping={damping} pages={pages}>
           {children}
